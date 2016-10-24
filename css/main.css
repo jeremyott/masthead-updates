@@ -299,7 +299,7 @@ textarea {
     }
 }
 header {
-  min-height: 700px;
+  min-height: 650px;
   background-image: url("/Users/jeremy.ott/Sites/masthead-updates/img/people_mac1.png");
   background-size: cover;
 }
@@ -325,6 +325,7 @@ ul, nav ul li {
 }
 nav ul li {
   padding: 0 25px;
+  min-height: 60px;
 }
 ul {
   padding-top: 10px;
@@ -338,6 +339,9 @@ ul {
 .ctas, .menu {
   padding: 30px 0px;
   font-family: gothmmed;
+}
+.menu {
+  padding: 30px 0px 0px 0px;
 }
 .button-orange {
     border-radius: 3px;
@@ -407,10 +411,10 @@ ul {
 .product-drop {
   background-color: #fff;
   width: 700px;
-  height: 500px;
+  height: 525px;
   position: absolute;
   left: 15%;
-  top:;
+  margin-top: 70px;
   z-index: 1;
 }
 .product-drop li {
@@ -452,7 +456,7 @@ ul.role li {
   line-height: 2;
 }
 .box-container{
-      margin-top: 29%;
+      margin-top: 27%;
 }
 .box-container.three{
       margin-top: 22%;
@@ -477,4 +481,25 @@ main .row {
 .testimonial {
   color: #fff;
   background: url("http://1agb93314bcf1knhv22id9u9.wpengine.netdna-cdn.com/wp-content/uploads/2016/09/blur-background-blue-tint.jpg");
+}
+
+.nav.row {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 9999;
+  box-shadow: 0px 2px 5px #999;
+}
+.product-drop ul li {
+  display: block !important;
+  padding: 2px 0px !important;
+  min-height: 0px !important;
+}
+.product-drop .col-md-6 {
+  margin-top: 25px;
+}
+
+@media only screen and (min-width: 1300px) {
+nav ul li {
+  padding: 0 6% !important;
 }
