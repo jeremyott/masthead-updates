@@ -29,8 +29,8 @@
             <ul>
               <li onmouseout="request2()" onmouseover="request()">Products</li>
               <li>Customers</li>
-              <li>Resources</li>
-              <li>Company</li>
+              <li onmouseout="request2b()" onmouseover="requestb()">Resources</li>
+              <li onmouseout="request2c()" onmouseover="requestc()">Company</li>
             </ul>
           </div>
           <div class="ctas col-md-3">
@@ -39,6 +39,72 @@
             <a href="#"><img style="max-height: 17px;" src="/Users/jeremy.ott/Sites/masthead-updates/img/globe.svg" alt="" /></a>
           </div>
           <div onmouseout="request2()" onmouseover="request()" id="drop1" class="container-fluid hide">
+            <div class="product-drop row">
+              <div></div>
+              <div class="col-md-7 products">
+                <ul>
+                  <li class="title">Products</li>
+                  <li>Applicant Tracking System</br><span class="desc">Automate your recruiting workflow</span></li>
+                  <li>CRM</br><span class="desc">Manage relationships with ease</span></li>
+                  <li>Onboarding</br><span class="desc">Eliminate manual data entry with electronic document management</span></li>
+                  <li>VMS Integration</br><span class="desc">Closed-loop Vendor Management System integration with your ATS</span></li>
+                  <li>Back Office</br><span class="desc">Automate manual back office tasks to lower costs and save time</span></li>
+                  <li>SalesDuel</br><span class="desc">Incentivize your team with sales gamification</span></li>
+                  <li>Market Intelligence</br><span class="desc">Identify gaps in engagement and coverage with your accounts</span></li>
+                  <li>Pulse</br><span class="desc">Automatically capture every client interaction directly from your inbox</span></li>
+                </ul>
+              </div>
+              <div class="col-md-5">
+                <ul class="role">
+                  <li style="color: #fff;" class="title">.</li>
+                  <li class="role-list">Enterprise</li>
+                  <li class="role-list">Platform</li>
+                  <li class="role-list">Marketplace</li>
+                  <li class="role-list">Services</li>
+                  <li class="role-list">Pricing</li>
+                  <li style="padding-top: 10px !important;" class="title">By Role</li>
+                  <li class="role-list">For Staffing</li>
+                  <li class="role-list">For Sales</li>
+                  <li class="role-list">For Customer Success</li>
+                </ul>
+                <button id="myBtn" style="width: 100%;" class="button-blue">Request Quote</button>
+              </div>
+            </div>
+          </div>
+          <div onmouseout="request2b()" onmouseover="requestb()" id="drop2" class="container-fluid hide">
+            <div class="product-drop row">
+              <div></div>
+              <div class="col-md-7 products">
+                <ul>
+                  <li class="title">Products</li>
+                  <li>Applicant Tracking System</br><span class="desc">Automate your recruiting workflow</span></li>
+                  <li>CRM</br><span class="desc">Manage relationships with ease</span></li>
+                  <li>Onboarding</br><span class="desc">Eliminate manual data entry with electronic document management</span></li>
+                  <li>VMS Integration</br><span class="desc">Closed-loop Vendor Management System integration with your ATS</span></li>
+                  <li>Back Office</br><span class="desc">Automate manual back office tasks to lower costs and save time</span></li>
+                  <li>SalesDuel</br><span class="desc">Incentivize your team with sales gamification</span></li>
+                  <li>Market Intelligence</br><span class="desc">Identify gaps in engagement and coverage with your accounts</span></li>
+                  <li>Pulse</br><span class="desc">Automatically capture every client interaction directly from your inbox</span></li>
+                </ul>
+              </div>
+              <div class="col-md-5">
+                <ul class="role">
+                  <li style="color: #fff;" class="title">.</li>
+                  <li class="role-list">Enterprise</li>
+                  <li class="role-list">Platform</li>
+                  <li class="role-list">Marketplace</li>
+                  <li class="role-list">Services</li>
+                  <li class="role-list">Pricing</li>
+                  <li style="padding-top: 10px !important;" class="title">By Role</li>
+                  <li class="role-list">For Staffing</li>
+                  <li class="role-list">For Sales</li>
+                  <li class="role-list">For Customer Success</li>
+                </ul>
+                <button id="myBtn" style="width: 100%;" class="button-blue">Request Quote</button>
+              </div>
+            </div>
+          </div>
+          <div onmouseout="request2c()" onmouseover="requestc()" id="drop3" class="container-fluid hide">
             <div class="product-drop row">
               <div></div>
               <div class="col-md-7 products">
@@ -200,6 +266,18 @@
         }
         function request2(){
           document.getElementById("drop1").className = "container-fluid hide";
+        }
+        function requestb(){
+          document.getElementById("drop2").className = "container-fluid";
+        }
+        function request2b(){
+          document.getElementById("drop2").className = "container-fluid hide";
+        }
+        function requestc(){
+          document.getElementById("drop3").className = "container-fluid";
+        }
+        function request2c(){
+          document.getElementById("drop3").className = "container-fluid hide";
         }
         </script>
         <script>
