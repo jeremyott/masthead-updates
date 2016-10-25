@@ -15,16 +15,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <script type="text/javascript">
 
-        function request(){
-          document.getElementById("drop1").className = "container-fluid";
-        }
-        function request2(){
-          document.getElementById("drop1").className = "container-fluid hide";
-        }
-
-        </script>
     </head>
     <body>
       <header>
@@ -50,7 +41,7 @@
           <div onmouseout="request2()" onmouseover="request()" id="drop1" class="container-fluid hide">
             <div class="product-drop row">
               <div></div>
-              <div class="col-md-6">
+              <div class="col-md-7 products">
                 <ul>
                   <li class="title">Products</li>
                   <li>Applicant Tracking System</br><span class="desc">Automate your recruiting workflow</span></li>
@@ -63,7 +54,7 @@
                   <li>Pulse</br><span class="desc">Automatically capture every client interaction directly from your inbox</span></li>
                 </ul>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-5">
                 <ul class="role">
                   <li style="color: #fff;" class="title">.</li>
                   <li class="role-list">Enterprise</li>
@@ -76,7 +67,7 @@
                   <li class="role-list">For Sales</li>
                   <li class="role-list">For Customer Success</li>
                 </ul>
-                <a style="margin-left: 40px; width: 72%;" class="button-blue" href="#">Request Quote</a>
+                <button id="myBtn" style="width: 100%;" class="button-blue">Request Quote</button>
               </div>
             </div>
           </div>
@@ -105,6 +96,17 @@
         <div class="container-fluid main center">
           <div class="row">
             <div class="col-md-12">
+                <div id="myModal1" class="modal">
+                  <div class="modal-content">
+                    <span class="close">x</span>
+                    <p>Request a price quote by submitting the form below </p>
+                    <form class="" action="index.html" method="post">
+                      <input type="textarea" name="name" value="">
+                      <input type="button" name="name" value="submit">
+                    </form>
+                  </div>
+                </div>
+              </div>
               <h3> Transform the way you work with your customers and create relationships that last a lifetime.</h3>
             </div>
             <a class="button-blue" href="#">Learn More</a>
@@ -191,6 +193,27 @@
             e.src='https://www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+        <script type="text/javascript">
+        function request(){
+          document.getElementById("drop1").className = "container-fluid";
+        }
+        function request2(){
+          document.getElementById("drop1").className = "container-fluid hide";
+        }
+        </script>
+        <script>
+
+        var modal = document.getElementById('myModal1');
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {modal.style.display = "block";}
+        span.onclick = function() {modal.style.display = "none";}
+        window.onclick = function(event) {
+        if (event.target == modal) {
+        modal.style.display = "none";
+        }
+        }
         </script>
     </body>
 </html>

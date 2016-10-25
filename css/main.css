@@ -330,6 +330,12 @@ nav ul li {
 ul {
   padding-top: 10px;
 }
+.col-md-6 ul {
+  margin-bottom: 0px !important;
+}
+.product-drop ul {
+    padding-left:10px;
+  }
 .ctas, .ctas a {
   display: inline-block;
 }
@@ -411,11 +417,12 @@ ul {
 .product-drop {
   background-color: #fff;
   width: 700px;
-  height: 525px;
+  height: 428px;
   position: absolute;
   left: 15%;
   margin-top: 70px;
-  z-index: 1;
+  z-index: -99;
+
 }
 .product-drop li {
   list-style: none;
@@ -492,14 +499,76 @@ main .row {
 }
 .product-drop ul li {
   display: block !important;
-  padding: 2px 0px !important;
+  padding: 2px 5px !important;
   min-height: 0px !important;
 }
-.product-drop .col-md-6 {
+
+.product-drop .col-md-7 {
   margin-top: 25px;
 }
+.product-drop .col-md-5 {
+  margin-top: 25px;
+}
+.product-drop .col-md-5 ul {
+  padding-left: 0px;
+}
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1450px) {
 nav ul li {
-  padding: 0 6% !important;
+  padding: 0 50px !important;
+}
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #009bdf;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    color: #fff;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #eaeaea;
+    text-decoration: none;
+    cursor: pointer;
+}
+input {
+  color: #999;
+  border: none;
+}
+
+.product-drop .products ul li:hover{
+  background: #009bdf !important;
+  color: #fff;
+}
+.product-drop .products ul li.title:hover{
+  background: #fff !important;
+  color: inherit;
+}
+a {
+  text-decoration: none !important;
 }
