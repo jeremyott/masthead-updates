@@ -333,9 +333,6 @@ ul {
 .col-md-6 ul {
   margin-bottom: 0px !important;
 }
-.product-drop ul {
-    padding-left:10px;
-  }
 .ctas, .ctas a {
   display: inline-block;
 }
@@ -422,10 +419,74 @@ ul {
   left: 15%;
   margin-top: 70px;
   z-index: -99;
-
 }
+.product-drop ul {
+    padding-left:10px;
+  }
 .product-drop li {
   list-style: none;
+}
+.product-drop ul li {
+  display: block !important;
+  padding: 2px 5px !important;
+  min-height: 0px !important;
+}
+.product-drop .col-md-7 {
+  margin-top: 25px;
+}
+.product-drop .col-md-5 {
+  margin-top: 25px;
+}
+.product-drop .col-md-5 ul {
+  padding-left: 0px;
+}
+.product-drop .products ul li:hover{
+  background: #009bdf !important;
+  color: #fff;
+}
+.product-drop .products ul li.title:hover{
+  background: #fff !important;
+  color: inherit;
+}
+.resource-drop {
+  background-color: #fff;
+  width: 150px;
+  height: 428px;
+  position: absolute;
+  left: 45%;
+  margin-top: 70px;
+  z-index: -99;
+}
+.resource-drop ul {
+    padding-left:10px;
+  }
+.resource-drop li {
+  list-style: none;
+}
+.resource-drop ul li {
+  display: block !important;
+  padding: 2px 5px !important;
+  min-height: 0px !important;
+}
+.company-drop {
+  background-color: #fff;
+  width: 150px;
+  height: 428px;
+  position: absolute;
+  left: 58%;
+  margin-top: 70px;
+  z-index: -99;
+}
+.company-drop ul {
+    padding-left:10px;
+  }
+.company-drop li {
+  list-style: none;
+}
+.company-drop ul li {
+  display: block !important;
+  padding: 2px 5px !important;
+  min-height: 0px !important;
 }
 span.desc {
   font-size: 10px;
@@ -497,21 +558,7 @@ main .row {
   z-index: 9999;
   box-shadow: 0px 2px 5px #999;
 }
-.product-drop ul li {
-  display: block !important;
-  padding: 2px 5px !important;
-  min-height: 0px !important;
-}
 
-.product-drop .col-md-7 {
-  margin-top: 25px;
-}
-.product-drop .col-md-5 {
-  margin-top: 25px;
-}
-.product-drop .col-md-5 ul {
-  padding-left: 0px;
-}
 
 @media only screen and (min-width: 1450px) {
 nav ul li {
@@ -560,15 +607,9 @@ input {
   color: #999;
   border: none;
 }
-
-.product-drop .products ul li:hover{
-  background: #009bdf !important;
-  color: #fff;
-}
-.product-drop .products ul li.title:hover{
-  background: #fff !important;
-  color: inherit;
-}
 a {
   text-decoration: none !important;
+}
+.drop {
+position: absolute !important;
 }
