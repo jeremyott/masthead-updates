@@ -25,6 +25,10 @@
      font-family: gothmbol;
      src: url(/Users/jeremy.ott/Sites/masthead-updates/css/fonts/gothmbol-webfont.woff);
       }
+    @font-face {
+      font-family: gothmbook;
+      src: url(/Users/jeremy.ott/masthead-updates/masthead-updates/css/fonts/gothmbok-webfont.woff);
+    }
 html {
     color: #222;
     font-size: 1em;
@@ -613,4 +617,13 @@ a {
 }
 .drop {
 position: absolute !important;
+}
+.resource-drop ul li:hover {
+  font-family: 'gothmbook' !important;
+}
+.product-drop ul li:hover {
+  font-family: 'gothmbook' !important;
+}
+.company-drop ul li:hover {
+  font-family: 'gothmbook' !important;
 }
