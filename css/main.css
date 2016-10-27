@@ -421,8 +421,11 @@ ul {
   height: 428px;
   position: absolute;
   left: 15%;
-  margin-top: 70px;
+  margin-top: 100px;
   z-index: -99;
+  box-shadow: 0px 2px 2px #999;
+  border: solid 1px #eaeaea;
+  border-top: none;
 }
 .product-drop ul {
     padding-left:10px;
@@ -436,10 +439,10 @@ ul {
   min-height: 0px !important;
 }
 .product-drop .col-md-7 {
-  margin-top: 25px;
+  margin-top: 0px;
 }
 .product-drop .col-md-5 {
-  margin-top: 25px;
+  margin-top: 0px;
 }
 .product-drop .col-md-5 ul {
   padding-left: 0px;
@@ -460,6 +463,9 @@ ul {
   left: 47%;
   margin-top: 100px;
   z-index: -99;
+  box-shadow: 0px 2px 2px #999;
+  border: solid 1px #eaeaea;
+  border-top: none;
 }
 .resource-drop ul {
     padding-left:10px;
@@ -480,6 +486,10 @@ ul {
   left: 58%;
   margin-top: 100px;
   z-index: -99;
+  box-shadow: 0px 2px 2px #999;
+  border: solid 1px #eaeaea;
+  border-top: none;
+
 }
 .company-drop ul {
     padding-left:10px;
@@ -626,4 +636,7 @@ position: absolute !important;
 }
 .company-drop ul li:hover {
   font-family: 'gothmbook' !important;
+}
+.product-drop ul li.title:hover {
+  font-family: 'gothmmed' !important;
 }
