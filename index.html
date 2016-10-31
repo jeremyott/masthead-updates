@@ -27,7 +27,7 @@
           </div>
           <div class="menu col-md-6">
             <ul>
-              <li onmouseout="request2()" onmouseover="request()">Products</li>
+              <li id="nav-product" onmouseout="request2()" onmouseover="request()">Products</li>
               <li>Customers</li>
               <li onmouseout="request2b()" onmouseover="requestb()">Resources</li>
               <li onmouseout="request2c()" onmouseover="requestc()">Company</li>
@@ -36,7 +36,9 @@
           <div class="ctas col-md-3">
             <a class="button-orange" href="#">Live Demo</a>
             <a class="button-trans" href="#">Login</a>
-            <a href="#"><img style="max-height: 17px;" src="/Users/jeremy.ott/Sites/masthead-updates/img/globe.svg" alt="" /></a>
+            <a onmouseout="request2d()" onmouseover="requestd()" style="height: 50px; padding-right: 0px; padding-left: 5px;" href="#"><img style="max-height: 17px;" src="/Users/jeremy.ott/masthead-updates/masthead-updates/img/globe.svg" alt="" />
+            <i onmouseout="request2d()" onmouseover="requestd()" style="color: #999;text-decoration: none; min-height: 69px;"class="fa fa-sort-desc" aria-hidden="true"></i></a>
+
           </div>
           <div onmouseout="request2()" onmouseover="request()" id="drop1" class="container-fluid hide">
             <div class="product-drop row">
@@ -76,14 +78,9 @@
               <div></div>
               <div class="col-md-12">
                 <ul class="role">
-                  <li class="role-list">Enterprise</li>
-                  <li class="role-list">Platform</li>
-                  <li class="role-list">Marketplace</li>
-                  <li class="role-list">Services</li>
-                  <li class="role-list">Pricing</li>
-                  <li class="role-list">For Staffing</li>
-                  <li class="role-list">For Sales</li>
-                  <li class="role-list">For Customer Success</li>
+                  <li class="role-list">All Resources</li>
+                  <li class="role-list">Blog</li>
+                  <li class="role-list">Customer Stories</li>
                 </ul>
               </div>
             </div>
@@ -93,14 +90,24 @@
               <div></div>
               <div class="col-md-12">
                 <ul class="role">
-                  <li class="role-list">Enterprise</li>
-                  <li class="role-list">Platform</li>
-                  <li class="role-list">Marketplace</li>
-                  <li class="role-list">Services</li>
-                  <li class="role-list">Pricing</li>
-                  <li class="role-list">For Staffing</li>
-                  <li class="role-list">For Sales</li>
-                  <li class="role-list">For Customer Success</li>
+                  <li class="role-list">About</li>
+                  <li class="role-list">Careers</li>
+                  <li class="role-list">News & Press</li>
+                  <li class="role-list">Contact Us</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div onmouseout="request2d()" onmouseover="requestd()" id="drop4" class="container-fluid hide">
+            <div class="country-drop row">
+              <div></div>
+              <div class="col-md-12">
+                <ul class="role">
+                  <li class="role-list">North America</li>
+                  <li class="role-list">United Kingdom</li>
+                  <li class="role-list">Germany</li>
+                  <li class="role-list">Netherlands</li>
+                  <li class="role-list">Asia Pacific</li>
                 </ul>
               </div>
             </div>
@@ -205,15 +212,60 @@
         <div class="container-fluid center main">
           <div class="row">
             <div class="col-md-12">
-            <h4>Start growing your business</h4>
+            <h4 style="padding: 25px 0px">Start growing your business</h4>
             <a class="button-orange">Live Demo</a>
             </div>
           </div>
         </div>
       </main>
       <footer>
+<div class="container-fluid contact about">
+    <div class="row">
+        <div class="col-md-7">
+            <h3>ABOUT BULLHORN RELATIONSHIP MANAGEMENT SOFTWARE</h3>
+            <p>Bullhorn provides cloud-based CRM solutions for relationship-driven businesses. Its automated data capture and customer insight technology helps companies win customers and keep them engaged. Today, more than 6,000 companies rely on the Bullhorn platform to help increase sales, improve service delivery, and streamline operations. Headquartered in Boston, with offices around the world, Bullhorn employs over 600 people globally. The company is founder-led and backed by Vista Equity Partners. To learn more, visit www.bullhorn.com or follow @Bullhorn on Twitter.
+            </p>
+        </div>
+        <div class="col-md-5">
+            <ul>
+                <li style="margin-top: 0px !Important;"><i class="fa fa-phone push-right"></i> (888) 465-4838</li>
+                <li><i class="fa fa-envelope push-right"></i> sales@bullhorn.com</li>
+                <li>100 Summer Street, 17th Floor, Boston, MA 02110</li>
+            </ul>
 
-      </footer>
+            <ul class="flat meta">
+                <li class="share">
+                    <a target="_blank" rel="nofollow" class="twitter" href="http://twitter.com/bullhorn" title="bullhorn on twitter"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li class="share">
+                    <a target="_blank" rel="nofollow" class="facebook" href="https://www.facebook.com/Bullhorn" title="bullhorn on facebook"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="share ">
+                    <a target="_blank" rel="nofollow" class="linkedin" href="https://www.linkedin.com/company/bullhorn" title="bullhorn on linkedin"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li class="share ">
+                    <a target="_blank" rel="nofollow" class="google" href="https://plus.google.com/+BullhornInc/posts" title="bullhorn on google plus"><i class="fa fa-google-plus"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid copyright">
+    <div class="row">
+        <div class="col-md-6">&copy; 2000 - 2016 Bullhorn, Inc. All rights reserved.
+        </div>
+        <div class="col-md-6 r">
+            <ul class="flat r">
+                <li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a href="http://www.bullhorn.com/sitemap/">Sitemap</a></li>
+                <li id="menu-item-3136" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3136"><a href="http://www.bullhorn.com/legal/">Legal</a></li>
+                <li id="menu-item-65" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65"><a href="http://www.bullhorn.com/privacy/">Privacy Policy</a></li>
+                <li id="menu-item-3649" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3649"><a href="http://1agb93314bcf1knhv22id9u9.wpengine.netdna-cdn.com/wp-content/uploads/2014/10/US-Terms-of-Service-5.1.pdf">Terms of Service</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</footer>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
@@ -246,6 +298,12 @@
         }
         function request2c(){
           document.getElementById("drop3").className = "container-fluid hide";
+        }
+        function requestd(){
+          document.getElementById("drop4").className = "container-fluid";
+        }
+        function request2d(){
+          document.getElementById("drop4").className = "container-fluid hide";
         }
         </script>
         <script>

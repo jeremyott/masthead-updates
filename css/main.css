@@ -434,6 +434,7 @@ ul {
   list-style: none;
 }
 .product-drop ul li {
+  font-family: 'gothmbook' !important;
   display: block !important;
   padding: 2px 5px !important;
   min-height: 0px !important;
@@ -457,23 +458,24 @@ ul {
 }
 .resource-drop {
   background-color: #fff;
-  width: 150px;
-  height: 230px;
-  position: absolute;
-  left: 47%;
-  margin-top: 100px;
-  z-index: -99;
-  box-shadow: 0px 2px 2px #999;
-  border: solid 1px #eaeaea;
-  border-top: none;
+width: 170px;
+height: 100px;
+position: absolute;
+left: 47%;
+margin-top: 100px;
+z-index: -99;
+box-shadow: 0px 2px 2px #999;
+border: solid 1px #eaeaea;
+border-top: none;
 }
 .resource-drop ul {
-    padding-left:10px;
+    padding-left:0px;
   }
 .resource-drop li {
   list-style: none;
 }
 .resource-drop ul li {
+  font-family: 'gothmbook' !important;
   display: block !important;
   padding: 2px 5px !important;
   min-height: 0px !important;
@@ -481,7 +483,7 @@ ul {
 .company-drop {
   background-color: #fff;
   width: 150px;
-  height: 230px;
+  height: 120px;
   position: absolute;
   left: 58%;
   margin-top: 100px;
@@ -492,12 +494,38 @@ ul {
 
 }
 .company-drop ul {
-    padding-left:10px;
+    padding-left:0px;
   }
 .company-drop li {
   list-style: none;
 }
 .company-drop ul li {
+  font-family: 'gothmbook' !important;
+  display: block !important;
+  padding: 2px 5px !important;
+  min-height: 0px !important;
+}
+.country-drop {
+  background-color: #fff;
+  width: 150px;
+  height: 155px;
+  position: absolute;
+  left: 88%;
+  margin-top: 100px;
+  z-index: ;
+  box-shadow: 0px 2px 2px #999;
+  border: solid 1px #eaeaea;
+  border-top: none;
+
+}
+.country-drop ul {
+    padding-left:0px;
+  }
+.country-drop li {
+  list-style: none;
+}
+.country-drop ul li {
+  font-family: 'gothmbook' !important;
   display: block !important;
   padding: 2px 5px !important;
   min-height: 0px !important;
@@ -552,7 +580,7 @@ h2 {
   padding: 6px 0;
 }
 .main {
-  padding: 100px 0px;
+  padding: 60px 0px;
 }
 .center {
   text-align: center;
@@ -639,4 +667,131 @@ position: absolute !important;
 }
 .product-drop ul li.title:hover {
   font-family: 'gothmmed' !important;
+}
+footer {
+    background: #333E48;
+    min-height: 150px
+}
+footer.row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.about{
+    border-top: 1px solid #1e242a;
+    background: #333e48 url('/wp-content/themes/bh14/_media/footer_logo_new.png') bottom 35px right no-repeat;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 12px;
+padding: 70px 0 105px;
+    position: relative;
+text-align: left;
+padding-left: 40px !important;
+padding-right: 40px !important;
+}
+footer ul{
+list-style: none;
+display: inline;
+}
+.copyright {
+    background: #1E242A;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: .85em;
+    position: relative;
+text-align: left;
+padding: 10px 0;
+}
+li.share {
+display: inline;
+}
+.flat li {
+display: inline;}
+.r {
+text-align: right;
+}
+.r li a {
+padding: 0 7px;
+color: white;
+}
+ul.flat.meta {
+padding-left: 0px;
+
+}
+
+a.twitter {
+    text-align: center !important;
+    color: white !important;
+    display: inline-block;
+    height: 20px !important;
+    width: 20px !important;
+    border-radius: 2px !important;
+    background: #00aced !important;
+}
+a.google {
+    text-align: center !important;
+    color: white !important;
+    display: inline-block !important;
+    height: 20px !important;
+    width: 20px !important;
+    border-radius: 2px !important;
+    background: #DD4B39 !important;
+}
+a.facebook {
+    text-align: center !important;
+    color: white !important;
+    display: inline-block !important;
+    height: 20px !important;
+    width: 20px !important;
+    border-radius: 2px !important;
+    background: #3B5998 !important;
+}
+a.linkedin {
+    text-align: center !important;
+    color: white !important;
+    display: inline-block !important;
+    height: 20px !important;
+    width: 20px !important;
+    border-radius: 2px !important;
+    background: #007BB6 !important;
+}
+footer ul li {
+margin-top: 10px;
+}
+
+footer h3 {
+font-size: 16px
+}
+ul.flat a {
+margin: 10px 10px 10px 0;
+}
+footer .row {
+  marigin-left: 0px;
+  margin-right: 0px;
+}
+nav>ul>li:hover {
+
+}
+li#nav-product:hover {
+}
+.ctas {
+  padding-bottom: 0px;
+}
+.product-drop .col-md-5 ul {
+width: 100%
+}
+.product-drop ul li:hover {
+    background-color: #009bdf;
+    color: white;
+}
+.company-drop ul li:hover {
+    background-color: #009bdf;
+    color: white;
+}
+.resource-drop ul li:hover {
+    background-color: #009bdf;
+    color: white;
+}
+.country-drop ul li:hover {
+    background-color: #009bdf;
+    color: white;
 }
